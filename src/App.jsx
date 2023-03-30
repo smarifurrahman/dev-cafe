@@ -1,10 +1,14 @@
 import './App.css'
+import Header from './component/Header/Header'
+import Main from './component/Main/Main'
 
 function App() {
 
   return (
-    <div className="App">
-      <h1 className='text-red-700 text-5xl'>Knowledge Cafe</h1>
+    <div className="App text-primary">
+      <Header></Header>
+      <hr className='border-gray2' />
+      <Main></Main>
     </div>
   )
 }
