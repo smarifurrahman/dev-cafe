@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "title": "CSS Grid Mastery: Complete Guide to Designing Responsive Layouts",
+        "author": "Arif",
+        "datePosted": "Mar 14 (4 Days ago)",
+        "readTime": 5,
+        "tags": ["#CSSGrid", "#ResponsiveDesign"],
+        "coverImg": "https://img.freepik.com/free-photo/professional-programmer-working-late-dark-office_1098-18705.jpg?w=740&t=st=1680208572~exp=1680209172~hmac=c0072cb7970840d645e2b5140eb225640c541422d306585c4c09c4a629989469",
+        "userImg": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=740&t=st=1680208887~exp=1680209487~hmac=605fc28e53b109c924a0c4c3d745e7ea8aebe041f088f3b47f213c5f57925ce3"
+    },
+    {
+        "id": "2",
+        "title": "Choosing the Best JavaScript Framework for Your Web Project",
+        "author": "Optimize Website Speed: Top 10 Tips for Faster Loading",
+        "datePosted": "Mar 10 (8 Days ago)",
+        "readTime": 15,
+        "tags": ["#JavaScript", "#WebDevelopment"],
+        "coverImg": "https://img.freepik.com/free-photo/programmer-scanning-screen-his-smartwatch-with-smartphone-camera_1098-18710.jpg?w=740&t=st=1680208423~exp=1680209023~hmac=ac3b192edf7231488c990196bfa1e3f8d186b669476a813a538cb36172f2cf61",
+        "userImg": "https://img.freepik.com/free-photo/indoor-portrait-pleased-handsome-ordinary-european-man-with-moustache-beard-smiling-broadly-feeling-confident-happy-while-making-arrangement-wedding-gray-wall_176420-22384.jpg?w=740&t=st=1680208919~exp=1680209519~hmac=21aa7c0ef7cf1f025ba5472c2b2abf3e0dd78849923e737aebd2129d2191e93b"
+    },
+    {
+        "id": "3",
+        "title": "Build Scalable Web Apps: Leveraging Cloud Services for Growth",
+        "author": "Arif",
+        "datePosted": "Mar 08 (10 Days ago)",
+        "readTime": 10,
+        "tags": ["#WebsiteSpeed", "#PerformanceOptimization"],
+        "coverImg": "https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?w=740&t=st=1680208399~exp=1680208999~hmac=f423f560640ff60be8a2c8e2ef7a3308fcbc9be8456e3ade92beb97c15c3fc6b",
+        "userImg": "https://img.freepik.com/free-photo/handsome-bearded-businessman-rubbing-hands-having-deal_176420-18778.jpg?w=740&t=st=1680209040~exp=1680209640~hmac=4c114bb411a8be4515f019f06485a0238fb292e99ea37cf44375b3eb5afcaac7"
+    },
+    {
+        "id": "4",
+        "title": "aaa",
+        "author": "Arif",
+        "datePosted": "Mar 05 (13 Days ago)",
+        "readTime": 12,
+        "tags": ["#WebApps", "#CloudComputing"],
+        "coverImg": "https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?w=740&t=st=1680208526~exp=1680209126~hmac=a9339beec50f738bea31d56b9cc6e8dc48472bdffaf4a980fefe7220ff9fa0d8",
+        "userImg": "https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=740&t=st=1680208986~exp=1680209586~hmac=44493dda201af919288d9de86823f78ed8cb8f1d981f5a40117f1375b3f54312"
+    }
+]
