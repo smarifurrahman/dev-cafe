@@ -2,9 +2,11 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-regular-svg-icons'
 
-const Blogs = ({ blogs }) => {
-    console.log(blogs);
-    const { id, title, author, datePosted, readTime, tags, coverImg, authorImg } = blogs;
+const Blogs = (props) => {
+    const { id, title, author, datePosted, readTime, tags, coverImg, authorImg } = props.blog;
+
+    const countReadTime = props.countReadTime;
+    const handleBookmarkedBlogs = props.handleBookmarkedBlogs;
 
     return (
         <div className='mb-8'>
@@ -22,7 +24,9 @@ const Blogs = ({ blogs }) => {
                 </div>
                 <p className='text-secondary mr-2 text-lg'>
                     <span className='mr-2'>{readTime} min read</span>
-                    <FontAwesomeIcon icon={faBookmark} />
+                    <span onClick={() => handleBookmarkedBlogs(props.blog)}>
+                        <FontAwesomeIcon icon={faBookmark} />
+                    </span>
                 </p>
             </div>
             <div>
@@ -32,7 +36,7 @@ const Blogs = ({ blogs }) => {
                         tags.map((tag, index) => <span className='mr-4 text-secondary text-lg' key={index}>{tag}</span>)
                     }
                 </p>
-                <button className='text-tertiary font-semibold underline mt-5'>Mark as read</button>
+                <button onClick={() => countReadTime(readTime)} className='text-tertiary font-semibold underline mt-5'>Mark as read</button>
             </div>
         </div>
     );
