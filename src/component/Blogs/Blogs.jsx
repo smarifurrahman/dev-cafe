@@ -23,10 +23,10 @@ const Blogs = (props) => {
                     </div>
                 </div>
                 <p className='text-secondary mr-2 text-lg'>
-                    <span>{readTime} min read</span>
-                    <span onClick={() => handleBookmarkedBlogs(props.blog)} className='p-2'>
+                    <span>{String(readTime).padStart(2, '0')} min read</span>
+                    <button onClick={() => handleBookmarkedBlogs(props.blog)} className='p-2'>
                         <FontAwesomeIcon icon={faBookmark} />
-                    </span>
+                    </button>
                 </p>
             </div>
             <div>
