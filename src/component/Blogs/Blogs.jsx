@@ -26,7 +26,7 @@ const Blogs = ({ blogs }) => {
                 </p>
             </div>
             <div>
-                <h2 className='text-3xl font-bold my-4 leading-relaxed'>{title}</h2>
+                <h2 className='text-3xl font-bold my-3 leading-normal'>{title}</h2>
                 <p>
                     {
                         tags.map((tag, index) => <span className='mr-4 text-secondary text-lg' key={index}>{tag}</span>)
