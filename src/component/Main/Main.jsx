@@ -12,7 +12,7 @@ const Main = () => {
     }, [])
 
     return (
-        <div className='grid grid-cols-3 my-8'>
+        <div className='grid grid-cols-3 gap-6 my-8'>
             <div className='col-span-2'>
                 {
                     blogs.map(blog => <Blogs
