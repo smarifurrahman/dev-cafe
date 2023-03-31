@@ -16,10 +16,17 @@ const Main = () => {
         setTotalTime(totalTime + readTime);
     }
 
-    const [bookmarked, setBookmarked] = useState([]);
+    const [bookmarkedBlogs, setBookmarkedBlogs] = useState([]);
     const handleBookmarkedBlogs = (blog) => {
-        const newBookmarked = [...bookmarked, blog];
-        setBookmarked(newBookmarked);
+
+        const newBookmarkedBlogs = [...bookmarkedBlogs, blog];
+        const exists = bookmarkedBlogs.find(bookmarkedBlog => blog.id === bookmarkedBlog.id);
+        if (!exists) {
+            setBookmarkedBlogs(newBookmarkedBlogs);
+        }
+        else {
+            console.log('already')
+        }
     }
 
     return (
@@ -37,7 +44,7 @@ const Main = () => {
             <div>
                 <Action
                     totalTime={totalTime}
-                    bookmarked={bookmarked}
+                    bookmarkedBlogs={bookmarkedBlogs}
                 ></Action>
             </div>
         </div>
