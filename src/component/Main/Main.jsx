@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import Blogs from '../Blogs/Blogs';
 import Action from '../Actions/Action';
-import { data } from 'autoprefixer';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+const notify = () => toast("Already Bookmarked This Blog !");
 
 const Main = () => {
     const [blogs, setBlogs] = useState([]);
@@ -25,28 +28,31 @@ const Main = () => {
             setBookmarkedBlogs(newBookmarkedBlogs);
         }
         else {
-            console.log('already')
+            notify();
         }
     }
 
     return (
-        <div className='grid grid-cols-3 gap-6 my-8'>
-            <div className='col-span-2'>
-                {
-                    blogs.map(blog => <Blogs
-                        blog={blog}
-                        key={blog.id}
-                        countReadTime={countReadTime}
-                        handleBookmarkedBlogs={handleBookmarkedBlogs}
-                    ></Blogs>)
-                }
+        <div>
+            <div className='grid grid-cols-3 gap-6 my-8'>
+                <div className='col-span-2'>
+                    {
+                        blogs.map(blog => <Blogs
+                            blog={blog}
+                            key={blog.id}
+                            countReadTime={countReadTime}
+                            handleBookmarkedBlogs={handleBookmarkedBlogs}
+                        ></Blogs>)
+                    }
+                </div>
+                <div>
+                    <Action
+                        totalTime={totalTime}
+                        bookmarkedBlogs={bookmarkedBlogs}
+                    ></Action>
+                </div>
             </div>
-            <div>
-                <Action
-                    totalTime={totalTime}
-                    bookmarkedBlogs={bookmarkedBlogs}
-                ></Action>
-            </div>
+            <ToastContainer />
         </div>
     );
 };
