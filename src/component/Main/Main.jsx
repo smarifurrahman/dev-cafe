@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import Blogs from '../Blogs/Blogs';
 import Action from '../Actions/Action';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-const notify = () => toast("Already Bookmarked This Blog !");
+import { notifyError, notifySuccess } from '../Toastify/Toastify';
 
 const Main = () => {
     const [blogs, setBlogs] = useState([]);
@@ -26,9 +25,10 @@ const Main = () => {
         const exists = bookmarkedBlogs.find(bookmarkedBlog => blog.id === bookmarkedBlog.id);
         if (!exists) {
             setBookmarkedBlogs(newBookmarkedBlogs);
+            notifySuccess();
         }
         else {
-            notify();
+            notifyError();
         }
     }
 
