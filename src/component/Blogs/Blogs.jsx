@@ -16,7 +16,9 @@ const Blogs = (props) => {
             </div>
             <div className='flex flex-col md:flex-row gap-4 justify-between items-center mt-7'>
                 <div className='flex items-center'>
-                    <div className={"h-[80px] w-[80px] bg-[url('" + authorImg + "')] bg-center bg-cover rounded-full"}></div>
+                    <div>
+                        <img className='h-[80px] w-[80px] rounded-full object-cover align-middle' src={authorImg} alt="author Image" />
+                    </div>
                     <div className='ml-6'>
                         <h3 className='font-bold text-xl mb-1'>{author}</h3>
                         <p className='text-secondary'>{datePosted}</p>
