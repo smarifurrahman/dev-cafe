@@ -14,7 +14,7 @@ const Blogs = (props) => {
                 <hr className='border-gray2 mb-8' />
                 <img className='rounded-lg' src={coverImg} alt="cover photo" />
             </div>
-            <div className='flex justify-between items-center mt-7'>
+            <div className='flex flex-col md:flex-row gap-4 justify-between items-center mt-7'>
                 <div className='flex items-center'>
                     <div className={"h-[80px] w-[80px] bg-[url('" + authorImg + "')] bg-center bg-cover rounded-full"}></div>
                     <div className='ml-6'>
@@ -30,10 +30,10 @@ const Blogs = (props) => {
                 </p>
             </div>
             <div>
-                <h2 className='text-3xl font-bold my-3 leading-normal'>{title}</h2>
+                <h2 className='text-2xl md:text-3xl font-bold my-3 leading-normal'>{title}</h2>
                 <p>
                     {
-                        tags.map((tag, index) => <span className='mr-4 text-secondary text-lg' key={index}>{tag}</span>)
+                        tags.map((tag, index) => <span className='mr-4 text-secondary text-lg block md:inline' key={index}>{tag}</span>)
                     }
                 </p>
                 <button onClick={() => countReadTime(readTime)} className='text-tertiary font-semibold underline mt-5'>Mark as read</button>
