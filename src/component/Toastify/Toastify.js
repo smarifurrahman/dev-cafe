@@ -3,7 +3,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const notifyError = () => toast.warn('You Have Already Bookmarked This Blog!', {
     position: "top-right",
-    autoClose: 5000,
+    autoClose: 3000,
     hideProgressBar: false,
     closeOnClick: true,
     pauseOnHover: true,
@@ -14,7 +14,7 @@ const notifyError = () => toast.warn('You Have Already Bookmarked This Blog!', {
 
 const notifySuccess = () => toast.success('Blog Bookmarked Successfully!', {
     position: "top-right",
-    autoClose: 5000,
+    autoClose: 3000,
     hideProgressBar: false,
     closeOnClick: true,
     pauseOnHover: true,
